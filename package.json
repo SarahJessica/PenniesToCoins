@@ -4,7 +4,7 @@
   "description": "coding test BBC News front-end developer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine",
     "start": "node index.js",
     "debug": "gulp serve"
   },
@@ -21,8 +21,12 @@
     "gulp-nodemon": "^2.2.1",
     "gulp-uglify": "^3.0.0",
     "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
     "wiredep": "^4.0.0"
   }
 }

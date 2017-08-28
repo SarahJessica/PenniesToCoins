@@ -8,12 +8,19 @@
     <!-- endinject -->
   </head>
   <body>
-    <p>Put in the number of pennies</p>
-    <form id="#mainForm">
-      <input type="text" id="p"></input>
-      <input type="submit" id="go"></input>
-    </form>
-    <p id="answer"></p>
+    <div class="container">
+      <div class="row">
+        <p>Put in the number of pennies</p>
+        <form action="">
+          <input type="radio" name="currency" value="GBP"> GBP<br>
+          <input type="radio" name="currency" value="USD"> USD<br>
+          <input type="radio" name="currency" value="EUR"> EUR
+        </form>
+        <input type="text" id="p"></input>
+        <button id="go">Calculate</button>
+      </div>
+      <div id="resultDisplay" class="row"></div>
+    </div>
   </body>
   <!-- bower:js -->
   <!-- endbower -->

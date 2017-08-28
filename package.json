@@ -4,11 +4,24 @@
   "description": "coding test BBC News front-end developer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "SJ Leivers",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-uglify": "^3.0.0",
+    "jasmine": "^2.8.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "wiredep": "^4.0.0"
   }
 }

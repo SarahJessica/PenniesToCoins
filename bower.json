@@ -1,0 +1,21 @@
+{
+  "name": "PenniesToCoins",
+  "description": "coding test BBC News front-end developer",
+  "main": "index.js",
+  "authors": [
+    "SJ Leivers"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "font-awesome": "^4.7.0"
+  }
+}

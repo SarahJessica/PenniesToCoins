@@ -1,9 +1,19 @@
-var a = 5;
-var b = 6;
-var c = a;
+'use strict';
 
-function addition(num1, num2, num3){
-  return num1 + num2 + num3;
+$(document).ready(init);
+var input = $('#penniesTotal').val();
+
+function init() {
+  // $('#answer').append("hello");
 }
 
-addition(a,b,c);
+$('#go').click(function() {
+  var num = $('#p').val();
+  console.log(num);
+  $('#answer').append(num);
+});
+
+// function mainCalculation() {
+//   var num = $('#penniesTotal').val();
+//   $('#answer').append(num);
+// }

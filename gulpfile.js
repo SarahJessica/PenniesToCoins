@@ -44,15 +44,20 @@ gulp.src(scssFiles)
 });
 
 // UGLIGFY
-gulp.task('compress', function() {
-  return gulp.src('./src/js/main.js')
-    .pipe(uglify())
+// gulp.task('compress', function() {
+//   return gulp.src('./src/js/calculations.js')
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./public/js/'));
+// });
+
+// MOVE JS
+gulp.task('prodJs', function() {
+  return gulp.src('src/js/*.js')
     .pipe(gulp.dest('./public/js/'));
 });
 
-
 // DEVELOPMENT SERVER
-gulp.task('serve', ['scss', 'compress', 'style', 'inject'], function() {
+gulp.task('serve', ['scss', 'prodJs', 'style', 'inject'], function() {
   var options = {
     script: 'index.js',
     delayTime: 1,

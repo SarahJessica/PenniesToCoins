@@ -4,7 +4,7 @@
   "description": "coding test BBC News front-end developer",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine",
+    "test": "./node_modules/.bin/jasmine-node spec",
     "start": "node index.js",
     "debug": "gulp serve"
   },
@@ -19,8 +19,10 @@
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.4",
     "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "jasmine": "^2.8.0",
+    "jasmine-node": "^1.14.5",
     "jasmine-core": "^2.8.0",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",

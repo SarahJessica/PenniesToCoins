@@ -15,4 +15,4 @@ npm start
 
 #Test
 
-npm t
+karma start

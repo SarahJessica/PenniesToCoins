@@ -8,12 +8,11 @@ function init() {
 }
 
 $('#go').click(function() {
-  var radio = $("input[name='gender']:checked").attr('value');
+  console.log('in the function');
+  var radio = $("input[name='currency']:checked").attr('value');
   var currency = getDenominations(radio);
-  // var currency = $("input[name='gender']:checked").val();
   var num = $('#p').val();
   var ans = mainCalculation(num, currency);
-  console.log(ans);
   displayAnswers(currency, ans);
   $('#resultDisplay').append(displayAnswers(currency, ans));
 });
@@ -66,6 +65,6 @@ function displayAnswers(denominations, mappedAnswerArray) {
   $('#resultDisplay').append(answerList);
 }
 
-// function test(a, b, c) {
-//   return a + b + c;
-// }
+function addition(a, b, c) {
+  return a + b + c;
+}
